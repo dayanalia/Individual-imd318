@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>education</title>
+  <link rel="stylesheet" href="education.css">
+
+  </style>
+  </head>
+<body>
+
+  <!-- Header Navigation -->
+  <table style="border-collapse: collapse; width: 100%; height: 60px; background-color: #d6e0e2;">
+    <tr>
+      <!-- Column 1: Image -->
+      <td style="text-align: center; vertical-align: middle; width: 30%;">
+        <a href="index.html"><img src="images/alia.png" alt="Logo" style="width: 100px; height: auto;"></a>
+      </td>
+
+      <!-- Column 2: Words -->
+      <th style="text-align: center; vertical-align: center; width: 70%; font-size: 25; letter-spacing: 2px;">
+        <a href="aboutme.html" style="text-decoration: none; color: #2f4156; margin: 0 25px; font-size: 25;">ABOUT ME</a>
+        <a href="education.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">EDUCATION</a>
+        <a href="family.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">FAMILY</a>
+        <a href="friends.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">FRIENDS</a>
+        <a href="hobbies.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">HOBBIES</a>
+        <a href="gallery.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">GALLERY</a>
+        <a href="contact.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">CONTACT</a>
+      </th>
+    </tr>
+  </table>
+
+  <div class="header-container">
+    <div class="header-section">
+      <h1>My Education Journey</h1>
+      <p>A Journey of learning and growth</p>
+    </div>
+    <!-- Song Icon -->
+    <div class="song-icon" onclick="toggleAudio()"></div>
+  </div>
+
+  <!-- Timeline Section -->
+  <div class="timeline">
+    <!-- Education 1 (Diploma) -->
+    <div class="timeline-container left">
+      <div class="circle"></div>
+      <div class="content">
+        <h3>Elementary School</h3>
+        <p>SK Gemilang, Padang Benggali</p>
+        <p>(2011-2016)</p>
+      </div>
+    </div>
+    
+    <!-- Education 2 (High School) -->
+    <div class="timeline-container left">
+      <div class="circle"></div>
+      <div class="content">
+        <h3>High School</h3>
+        <p>SMK Gemilang, Padang Benggali</p>
+        <p>(2017 - 2022)</p>
+      </div>
+    </div>
+    
+    <!-- Education 3 (Diploma) -->
+    <div class="timeline-container left">
+      <div class="circle"></div>
+      <div class="content">
+        <h3>Diploma in Information Management</h3>
+        <p>UiTM Merbok, Kedah</p>
+        <p>(2022-now)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Audio -->
+  <audio id="background-audio" loop>
+    <source src="audio/taylor.mp3" type="audio/mp3"> 
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2024 DAYANA JUHARI STUDIO</span>
+  </footer>
+
+  <script>
+    // Toggle the audio playback when the icon is clicked
+    function toggleAudio() {
+      const audio = document.getElementById('background-audio');
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+</html>
