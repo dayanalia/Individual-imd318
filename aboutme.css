@@ -1,0 +1,236 @@
+body {
+      font-family: 'coolvetica', sans-serif;
+      background-color: #d6e0e2;
+    }
+
+   .header-container {
+      position: relative; 
+      height: 300px;
+      background-image: url('images/aboutme.jpeg'); 
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+
+   .header-container .song-icon {
+      position: absolute; 
+      top: 20px; 
+      left: 20px; 
+      width: 40px; 
+      height: 40px;
+      background-image: url('images/song.jpg'); 
+      background-size: cover; 
+      cursor: pointer; 
+      z-index: 2; 
+    }
+
+   .header-container .header-section {
+      text-align: center; 
+      color: white;
+      z-index: 1; 
+    }
+
+   .header-container::before {
+      content: ''; 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 0; 
+    }
+
+   .header-section {
+      text-align: center; 
+      color: white;
+      z-index: 1; 
+    }
+
+   .header-section h1 {
+      margin: 0; 
+      font-size: 36px; 
+      color: white;
+      letter-spacing: 3px;
+    }
+
+   .header-section p {
+      margin: 10px 0 0; 
+      font-size: 16px; 
+      color: white; 
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap; 
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    .text-section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text-section h1 {
+      font-size: 36px;
+      color: #2f4156;
+      letter-spacing: 3px;
+    }
+
+    .text-section p {
+      font-size: 16px;
+      color: black;
+      line-height: 1.6;
+      letter-spacing: 2px;
+    }
+
+    .text-section p strong {
+      font-weight: bold;
+    }
+
+    .text-section .footer-text {
+      margin-top: 20px;
+      color: #2f4156; 
+    }
+
+    .slider-section {
+      flex: 1;
+      position: relative;
+      max-width: 300px; 
+    }
+
+    .slider-section img {
+      width: 100%;
+      border-radius: 8px;
+      border: 5px solid #2f4156;
+    }
+
+    /* Video Section */
+    .video-section {
+      flex-basis: 100%; 
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .video-section h2 {
+      font-size: 32px;
+      color: #2f4156;
+      letter-spacing: 3px;
+    }
+
+    .video-section video {
+      width: 80%;
+      max-width: 800px;
+      border: 10px solid #2f4156;
+      border-radius: 8px;
+    }
+
+    /* Favorite Songs Section */
+    .favorite-songs {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .favorite-songs h3 {
+      font-size: 32px;
+      color: #2f4156;
+      letter-spacing: 2px;
+    }
+
+    .songs-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .song-item {
+      text-align: center;
+    }
+
+    .song-item img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 8px solid #2f4156;
+      object-fit: cover;
+    }
+
+   .song-item p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #2f2f2f;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+   .favorite-foods {
+      text-align: center;
+      margin-top: 50px;
+      padding: 30px 0;
+      border-radius: 10px;
+    }
+
+   .favorite-foods h3 {
+      font-size: 32px;
+      color: #2f4156; 
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+   .food-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px; 
+      flex-wrap: wrap;
+    }
+
+   .food-item {
+      text-align: center;
+      position: relative;
+    }
+
+   .food-item img {
+      width: 150px; 
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid #2f4156; 
+    }
+
+   .food-item p {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333; 
+      letter-spacing: 1px;
+    }
+
+    .song-icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      background-image: url('images/song.jpg'); 
+      background-size: cover;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+      audio#background-audio {
+      display: none; 
+    }
+
+
