@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>friends</title>
+  <link rel="stylesheet" href="friends.css">
+
+  </style>
+</head>
+<body>
+
+<!-- Header Navigation -->
+  <table style="border-collapse: collapse; width: 100%; height: 60px; background-color: #d6e0e2;">
+    <tr>
+      <!-- Column 1: Image -->
+      <td style="text-align: center; vertical-align: middle; width: 30%;">
+        <a href="index.html"><img src="images/alia.png" alt="Logo" style="width: 100px; height: auto;"></a>
+      </td>
+
+      <!-- Column 2: Words -->
+      <th style="text-align: center; vertical-align: center; width: 70%; font-size: 25; letter-spacing: 2px;">
+        <a href="aboutme.html" style="text-decoration: none; color: #2f4156; margin: 0 25px; font-size: 25;">ABOUT ME</a>
+        <a href="education.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">EDUCATION</a>
+        <a href="family.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">FAMILY</a>
+        <a href="friends.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">FRIENDS</a>
+        <a href="hobbies.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">HOBBIES</a>
+        <a href="gallery.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">GALLERY</a>
+        <a href="contact.html" style="text-decoration: none; color: #2f4156; margin: 0 25px;">CONTACT</a>
+      </th>
+    </tr>
+  </table>
+
+<div class="header-container">
+  <div class="header-section">
+    <h1>My Besties</h1>
+    <p>A few words about the amazing people I call my friends</p>
+  </div>
+
+  <!-- Song Icon inside the header-container -->
+  <div class="song-icon" onclick="toggleAudio()"></div>
+</div>
+
+<!-- Friends Profiles Section -->
+<div class="friends-container">
+    <!-- Friend's Profile 1 -->
+    <div class="friend">
+        <img src="images/aina.jpeg" alt="Friend 1">
+        <h3>Que</h3>
+        <p>A fun and supportive friend who always makes random jokes and never says no.</p>
+        <div class="fun-facts">
+            <p>Favorite Hobby: Hiking</p>
+            <p>Favorite Food: TomYam</p>
+        </div>
+    </div>
+
+    <!-- Friend's Profile 2 -->
+    <div class="friend">
+        <img src="images/qilah.jpeg" alt="Friend 2">
+        <h3>Qilah</h3>
+        <p>Always full of energy and main brain cells in the group.</p>
+        <div class="fun-facts">
+            <p>Favorite Hobby: Reading</p>
+            <p>Favorite Food: Sushi</p>
+        </div>
+    </div>
+
+    <!-- Friend's Profile 3 -->
+    <div class="friend">
+        <img src="images/chad.jpeg" alt="Friend 3">
+        <h3>Ochad</h3>
+        <p>A friend who always makes jokes and easy to make friends with.</p>
+        <div class="fun-facts">
+            <p>Favorite Hobby: Watching movie</p>
+            <p>Favorite Food: Spaghetti</p>
+        </div>
+    </div>
+
+    <!-- Friend's Profile 4 -->
+    <div class="friend">
+        <img src="images/sarah.jpeg" alt="Friend 4">
+        <h3>Sar</h3>
+        <p>The one with a shorter height and a good listener.</p>
+        <div class="fun-facts">
+            <p>Favorite Hobby: Watching videos on Youtube</p>
+            <p>Favorite Food: TomYam</p>
+        </div>
+    </div>
+
+    <!-- Friend's Profile 5 -->
+    <div class="friend">
+        <img src="images/shi.jpeg" alt="Friend 5">
+        <h3>Shi</h3>
+        <p>The one that is called "airhead" but always go far for studying.</p>
+        <div class="fun-facts">
+            <p>Favorite Hobby: Sleeping</p>
+            <p>Favorite Food: Chicken Sambal</p>
+        </div>
+    </div>
+
+    <!-- Friend's Profile 6 -->
+    <div class="friend">
+        <img src="images/afrina.jpeg" alt="Friend 6">
+        <h3>Afrin</h3>
+        <p>The quiet one that always prefer to listen.</p>
+        <div class="fun-facts">
+            <p>Favorite Hobby: Travelling</p>
+            <p>Favorite Food: Nasi Goreng Biggy</p>
+        </div>
+    </div>
+</div>
+
+ <!-- Background Audio -->
+  <audio id="background-audio" loop>
+    <source src="audio/guilty.mp3" type="audio/mp3"> 
+    Your browser does not support the audio tag.
+  </audio>
+
+<script>
+  var audio = document.getElementById('background-audio');
+
+  function toggleAudio() {
+    if (audio.paused) {
+      audio.play(); // Play the audio
+    } else {
+      audio.pause(); // Pause the audio
+    }
+  }
+</script>
+
+<!-- Footer -->
+<footer>
+    <span>&copy; 2024 DAYANA JUHARI STUDIO</span>
+</footer>
+
+</body>
+</html>
